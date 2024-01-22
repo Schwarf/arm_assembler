@@ -13,8 +13,10 @@ _start:
 	LDR R1, [R0]
 	// Takes the value/address from R0 adds 4 and retrieves the value in that memory location
 	LDR R2,[R0, #4]
-	
-
+	// PRE-INCREMENT EXCLAMATION MARK
+    LDR R3,[R0, #4]!
+    // PRE-INCREMENT EXCLAMATION MARK
+    LDR R4,[R0], #4
 
 // get data on the stack
 .data // data section in the application
